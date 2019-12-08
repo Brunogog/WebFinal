@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SuSaúde</title>
+
+  <link rel="shortcut icon" href="../view/image/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="../view/css/app.css" />
+</head>
+
+<body>
+  <?php include 'header.html';?>
+      
+    <div class="container">
+      <div class="jumbotron">
+        <div class="form-center">
+          <img class="mb-4" src="../view/image/cruz.fw.png" alt="icone">
+        </div>
+        <div class="quick-search">
+          <div class="form-group input-group">
+              <div class="img-group">
+                <img class="#" src="../view/image/doctor.png" alt="icone">
+              </div>
+              <input name="" class="form-control" placeholder="Pesquisa rápida" type="text">
+            </div>  
+          </div>
+        </div>
+  
+        <div class="grid-container">
+          <div class="grid-item card">
+              <a href="/SuSaude/consulta_hospital">
+                <div class="img-group">
+                  <img src="../view/image/hospital.png" class="card-img-top" alt="hospital">
+                </div>
+              <div class="card-body">Hospital</div>
+            </a>
+          </div>
+          <div class="grid-item card">
+            <a href="/SuSaude/consulta_paciente">
+              <div class="img-group">
+                <img src="../view/image/dentista.png" class="card-img-top" alt="dentista">
+              </div>
+              <div class="card-body">Paciente</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <?php include 'footer.html';?>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script type="text/javascript" src="../view/js/app.js"></script>
+</body>
+
+</html>

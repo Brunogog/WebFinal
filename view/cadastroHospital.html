@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Fronteira abertas</title>
+
+  <link rel="shortcut icon" href="../view/image/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" type="text/css" href="../view/css/app.css" />
+</head>
+
+<body>
+  <?php include 'header.html';?>
+
+  <div class="container">
+    <div class="row" id="formEmpresa">
+      <h5 class="title">Cadastre um novo Hospital</h5>
+      <div class="col-sm-12">
+        <form id="adicionarHospital" action="javascript:enviarForm()">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Endereço</label>
+                <input type="text" class="form-control"id="endereco" placeholder="Digite o Endereço do Hospital">
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label>Avaliação do Hospital</label>
+                <input type="text" class="form-control" id="avaliacao" maxlength="3" placeholder="Dê a sua nota">
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <div class="form-group">
+                <label style="width: 100%;">&nbsp;</label>
+                <input type="submit" class="btn btn-primary" value="Enviar" onclick="go()">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="form-group">
+          <div class="float-right">
+            <button type="button" class="btn btn-primary" id="back" onclick="voltar()">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+
+  <?php include 'footer.html';?>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script type="text/javascript" src="../view/js/app.js"></script>
+</body>
+
+</html>
